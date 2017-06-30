@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppWithKotlin</string>
+    <string name="item_text">This is Text.</string>
+    <string name="item_summary">This is Summary.</string>
+</resources>
