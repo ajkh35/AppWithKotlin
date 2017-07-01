@@ -1,5 +1,7 @@
 package com.example.ajay3.appwithkotlin
 
+import android.app.ProgressDialog
+import android.content.Context
 import android.os.AsyncTask
 import org.json.JSONException
 import org.json.JSONObject
@@ -12,11 +14,34 @@ import java.nio.charset.Charset
 /**
  * Created by ajay3 on 6/30/2017.
  */
-class APIService : AsyncTask<String, Void, JSONObject>() {
+class APIService(context: Context) : AsyncTask<String, Int, JSONObject>() {
+
+    var mProgressDialog: ProgressDialog
+    val mContext = context
+
+    init {
+        mProgressDialog = ProgressDialog(mContext)
+        mProgressDialog.max = 100
+        mProgressDialog.progress = 0
+    }
+
+//    override fun onPreExecute() {
+//        mProgressDialog.show(mContext,"","")
+//        super.onPreExecute()
+//    }
+//
+//    override fun onProgressUpdate(vararg values: Int?) {
+//        mProgressDialog.progress = values[0] as Int
+//    }
 
     override fun doInBackground(vararg params: String?): JSONObject {
         val jsonObject: JSONObject = readJSONFromURL(params[0] as String)
         return jsonObject
+    }
+
+    override fun onPostExecute(result: JSONObject?) {
+//        mProgressDialog.dismiss()
+        super.onPostExecute(result)
     }
 
     // Get JSONObject from URL

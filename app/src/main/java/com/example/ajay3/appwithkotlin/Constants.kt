@@ -6,10 +6,22 @@ package com.example.ajay3.appwithkotlin
 class Constants{
 
     companion object {
-        val MOVIE_PAGE1_URL: String = "https://yts.ag/api/v2/list_movies.json"
-        val MOVIE_PAGE2_URL: String = "https://yts.ag/api/v2/list_movies.json?page=2"
-        val MOVIE_PAGE3_URL: String = "https://yts.ag/api/v2/list_movies.json?page=3"
-        val MOVIE_PAGE4_URL: String = "https://yts.ag/api/v2/list_movies.json?page=4"
-        val MOVIE_PAGE5_URL: String = "https://yts.ag/api/v2/list_movies.json?page=5"
+
+        val MOVIE_URL = "https://yts.ag/api/v2/list_movies.json"
+        val MOVIE_PAGE_URL = "https://yts.ag/api/v2/list_movies.json?page="
+
+//        val MOVIE_PAGES: Array<String> = arrayOf(
+//                "https://yts.ag/api/v2/list_movies.json?page=2",
+//                "https://yts.ag/api/v2/list_movies.json?page=3",
+//                "https://yts.ag/api/v2/list_movies.json?page=4",
+//                "https://yts.ag/api/v2/list_movies.json?page=5",
+//                "https://yts.ag/api/v2/list_movies.json?page=6",
+//                "https://yts.ag/api/v2/list_movies.json?page=7",
+//                "https://yts.ag/api/v2/list_movies.json?page=8",
+//                "https://yts.ag/api/v2/list_movies.json?page=9",
+//                "https://yts.ag/api/v2/list_movies.json?page=10")
+
+        val VIEW_TYPE_MOVIE = 0
+        val VIEW_TYPE_LOADING = 1
     }
 }

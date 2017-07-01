@@ -3,4 +3,9 @@
     <dimen name="dp_2">2dp</dimen>
     <dimen name="dp_50">50dp</dimen>
     <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_10">10dp</dimen>
 </resources>
