@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         (mRecyclerAdapter as RecyclerAdapter).setOnLoadMoreListener(MyListener())
         (mRecyclerAdapter as RecyclerAdapter).setMyScrollListener()
+
+        newFeature()
+    }
+
+    fun newFeature() {
+        Log.e("New Feature", "Feature loaded")
     }
 
     /**
