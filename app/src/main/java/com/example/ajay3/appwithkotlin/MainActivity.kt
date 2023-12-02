@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         mRecyclerAdapter = RecyclerAdapter(recycler,this)
         recycler.adapter = mRecyclerAdapter as RecyclerAdapter
 
-        (mRecyclerAdapter as RecyclerAdapter).setOnLoadMoreListener(MyListener())
-        (mRecyclerAdapter as RecyclerAdapter).setMyScrollListener()
+        //(mRecyclerAdapter as RecyclerAdapter).setOnLoadMoreListener(MyListener())
+        //(mRecyclerAdapter as RecyclerAdapter).setMyScrollListener()
     }
 
     /**
